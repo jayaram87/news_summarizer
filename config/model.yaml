@@ -1,0 +1,11 @@
+params:
+  train_batch_size: 32
+  val_batch_size: 16
+  train_epochs: 50
+  val_epochs: 10
+  max_len: 512
+  summary_len: 150
+  num_beams: 4
+  repetition_penalty: 2.0
+  length_penalty: 1.0
+  

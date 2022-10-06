@@ -1,0 +1,13 @@
+pynytimes
+PyYaml
+contractions
+spacy
+webdriver-manager
+selenium==3.141.0
+pymongo[srv]
+pandas
+numpy
+torch
+sentencepiece
+transformers
+-e .
