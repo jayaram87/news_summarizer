@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 class="title">Vox News Summarizer</h1>
+    <h4 class="item">Enter a keyword to get latest news article summary</h4>
+    {% if error %}
+        <p class=error><strong>Error:</strong> {{ error }}
+    {% endif %}
+    <form action="/" method="POST">
+        <input placeholder="Enter news keyword", type="text", name="keyword", id="keyword" requried/>
+        <input type="submit" value='Summarize'/>
+    </form>
+    <br>
+    {% if data %}
+    <table>
+        <tr>
+            <th>Article Date</th>
+            <th>Keyword</th>
+            <th>News Headline</th>
+            <th>News Summary</th>
+        </tr>
+        <tr>
+            <td>{{ data.date }}</td>
+            <td>{{ data.keyword }}</td>
+            <td>{{ data.headline }}</td>
+            <td>{{ data.summary }}</td>
+        </tr>
+    </table>
+    {% endif %}
+</div>
+{% endblock %}

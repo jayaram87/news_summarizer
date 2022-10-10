@@ -130,5 +130,6 @@ dmypy.json
 src.egg-info/
 src_logging/
 config/secret.yaml
+config/secure-connect-news-app.zip
 env/
 models/

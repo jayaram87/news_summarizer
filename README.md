@@ -10,7 +10,7 @@
 ## Goals
 
 ## Architecture
-<img src='https://github.com/jayaram87/news-summarizer/blob/main/Architecture.jpg' width=400px height=300px align="center" />
+<img src='./news_summary/Architecture.jpg' width=400px height=300px align="center" />
 
 ## Datasets
 https://www.kaggle.com/datasets/sunnysai12345/news-summary
@@ -20,3 +20,11 @@ https://www.kaggle.com/datasets/sunnysai12345/news-summary
 ## Milestones
 
 ## References
+
+## App
+```bash
+conda create -p ./env python=3.8 -y
+conda activate ./env
+pip install -r requirements.txt
+python app.py
+```
